@@ -38,6 +38,7 @@ class ModifierDimensionView {
     String valueType
     String unit
     String visitInd = 'N'
+    String tooltip
 
     static transients = ['visit']
 
@@ -65,5 +66,6 @@ class ModifierDimensionView {
         nodeType  column: 'modifier_node_type' // known values: {L, F}
         valueType column: 'valtype_cd'
         unit      column: 'std_units'
+        tooltip   column: 'c_tooltip'
     }
 }
