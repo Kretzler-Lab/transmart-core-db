@@ -56,7 +56,7 @@ class AcrossTrialsOntologyTerm extends AbstractAcrossTrialsOntologyTerm {
 
     @Override
     String getTooltip() {
-        name
+        modifierDimension.tooltip == null ? name : modifierDimension.tooltip
     }
 
     @Override
